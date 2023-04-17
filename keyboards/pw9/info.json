@@ -1,0 +1,71 @@
+{
+    "manufacturer": "Polarity Works",
+    "keyboard_name": "pw9",
+    "maintainer": "PolarityWorks",
+    "bootloader": "rp2040",
+    "diode_direction": "COL2ROW",
+    "features": {
+        "bootmagic": true,
+        "command": false,
+        "console": false,
+        "extrakey": true,
+        "mousekey": true,
+        "nkro": true,
+        "encoder": true,
+        "rgblight": true
+    },
+    "matrix_pins": {
+        "cols": ["GP21", "GP0", "GP5"],
+        "rows": ["GP1", "GP22", "GP23"]
+    },
+    "processor": "RP2040",
+    "url": "",
+    "usb": {
+        "device_version": "1.0.0",
+        "pid": "0x7765",
+        "vid": "0xFEED"
+    },
+    "encoder": {
+        "rotary": [
+            {
+                "pin_a": "GP25",
+                "pin_b": "GP24"
+            },
+            {
+                "pin_a": "GP6",
+                "pin_b": "GP11"
+            }
+        ]
+    },
+    "rgblight" : {
+        "led_count" : 4,
+        "pin" : "GP15",
+        "animations": {
+            "breathing" : true,
+            "rainbow_mood" : true,
+            "rainbow_swirl" : true,
+            "snake"   : true,
+            "knight"  : true,
+            "christmas" : true,
+            "static_gradient" : true,
+            "rgb_test" : true,
+            "alternating" : true,
+            "twinkle" : true
+        },
+    },
+    "layouts": {
+        "LAYOUT_ortho_3x3": {
+            "layout": [
+                { "matrix": [0, 0], "x": 0, "y": 0 },
+                { "matrix": [0, 1], "x": 1, "y": 0 },
+                { "matrix": [0, 2], "x": 2, "y": 0 },
+                { "matrix": [1, 0], "x": 0, "y": 1 },
+                { "matrix": [1, 1], "x": 1, "y": 1 },
+                { "matrix": [1, 2], "x": 2, "y": 1 },
+                { "matrix": [2, 0], "x": 0, "y": 2 },
+                { "matrix": [2, 1], "x": 1, "y": 2 },
+                { "matrix": [2, 2], "x": 2, "y": 2 }
+            ]
+        }
+    }
+}
